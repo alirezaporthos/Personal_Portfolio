@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.4/css/flag-icons.min.css" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <script defer src="bootstrap/bootstrap.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Portfolio</title>
+</head>
+<body class="body" onload="removeLoader();">
+
+    <!-- loading... -->
+    <div class="spinner" id="loader">
+        <svg id="loader-content">
+            <use href="img/icon.svg#icon-spinner3"></use>
+        </svg>
+        <p>Loading...</p>
+    </div>
+
+
+    <nav class="nav_bar">
+        <div class="nav_bar__div">
+            <img src="img/profile.jpg" alt="profile-image" class="nav_bar__img">
+            <h2 class="header-2">Alireza Eidivandi</h2>
+        </div>
+        <input type="checkbox" class="nav_bar__checkbox" id="navi-toggel">
+        <label for="navi-toggel" class="nav-bar__btn">-</label>
+        <ul class="nav_bar__list">
+            <li class="nav_bar__item"><a href="#Home" class="nav_bar__link">Home</a></li>
+            <li class="nav_bar__item"><a href="#About Me" class="nav_bar__link">About Me</a></li>
+            <li class="nav_bar__item"><a href="#What I Do" class="nav_bar__link">What I Do</a></li>
+            <li class="nav_bar__item"><a href="#Resume" class="nav_bar__link">Resume</a></li>
+            <li class="nav_bar__item"><a href="#Portfolio" class="nav_bar__link">Portfolio</a></li>
+            <li class="nav_bar__item"><a href="#Contact" class="nav_bar__link">contact</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="Home">
+        <div class="header__content">
+            <h2 class="header-h">Welcome</h2>
+            <div class="typing_title">
+                <span class="text first-text">I'm </span>
+                <span class="text second-text"></span>
+            </div>
+            <h3 class="header-3">Based in Esfahan,Iran</h3>
+            <a href="#Contact" id="hireMe" class="header__link" data-text="hire">Hire Me</a>
+            <a href="#About Me" class="icon-down header-3">&#8250;</a>
+        </div>
+    </header>
+
+    <section class="about_me" id="About Me">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="header-2" data-aos="fade-up">Know Me More</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 offset-md-1" data-aos="fade-right">
+                    <h3 class="header-3 fw-4">I'm Alireza Eidivandi</h3>
+                    <p class="about_me__text">
+                        I’m alireza eidivandi a.k.a Alireza Porthos, a backend Laravel developer at NexinoLab, working on an online learning and mentoring marketplace, and last year computer engineering student at University of Isfahan. I started programming at school as an extra activity, and then after coming to college started getting into programming professionally, it’s been four years since I’ve started learning web development and almost three years of working full time as a web developer. I love learning new things, be it from seniors or reading books and codes and facing new projects as challenges.
+                    </p>
+                </div>
+                <div class="col-md-5 mt-4 d-flex flex-column justify-content-center" data-aos="fade-left">
+                    <p class="about_me__text">Name : Alireza Eidivandi</p>
+                    <p class="about_me__text">Email : alirezaportous@gmail.com</p>
+                    <p class="about_me__text">Age : 23</p>
+                    <p class="about_me__text">From : Esfahan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="What I Do">
+        <div class="container mt-4">
+            <div class="row">
+                <h2 class="header-2" data-aos="fade-up">What I Do ?</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="row">
+                        <div class="col-4 mt-3">
+                            <svg class="services__icon">
+                                <use xlink:href="img/icon.svg#icon-tools"></use>
+                            </svg>
+                        </div>
+                        <div class="col-8">
+                            <h3 class="header-3" data-text="services2">Web Developer</h3>
+                            <p class="services__text" data-text="services3">
+                                design, modify, repair, and maintain Web applications
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-4 mt-3">
+                            <svg class="services__icon">
+                                <use xlink:href="img/icon.svg#icon-display"></use>
+                            </svg>
+                        </div>
+                        <div class="col-8">
+                            <h3 class="header-3" data-text="services6">Back-end Developer</h3>
+                            <p class="services__text" data-text="services7">
+                                managing server-side web application logic including data process and activities like, writing APIs,
+                                 and performing actions on website.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- <div class="row mt-5">
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="row">
+                            <div class="col-4 mt-3">
+                                <svg class="services__icon">
+                                    <use xlink:href="img/icon.svg#icon-display"></use>
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <h3 class="header-3" data-text="services6">فرانت اند</h3>
+                                <p class="services__text" data-text="services7">
+                                    توسعه ظاهر سایت و ایجاد واکنش نصبت به اعمال کاربر و طراحی ریسپانیسو
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="row">
+                            <div class="col-4 mt-3">
+                                <svg class="services__icon">
+                                    <use xlink:href="img/icon.svg#icon-database"></use>
+                                </svg>
+                            </div>
+                            <div class="col-8">
+                                <h3 class="header-3" data-text="services8">بک اند</h3>
+                                <p class="services__text" data-text="services9">
+                                    متصل کردن رابط کاربری به پایگاه داده و انتقال داده ها
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+
+    </section>
+
+    <section class="resume" id="Resume">
+        <div class="container mt-4">
+            <div class="row">
+                <h2 class="header-2" data-aos="fade-up">Resume</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="row">
+                        <h2 class="header-3">My Education</h2>
+                    </div>
+                    <div class="resume__card ">
+                        <p class="resume__card--year">2017 – present</p>
+                        <h2 class="header-3">Bachelor’s degree, Computer engineering </h2>
+                        <p class="resume__card--place">University of Isfahan</p>
+                        <!-- <p class="resume__card--text">
+                            سال 1396 در کنکور سراسری ریاضی رشته مکانیک دانشگاه یزد را قبول شدم
+                        </p> -->
+                    </div>
+                    <div class="resume__card ">
+                        <p class="resume__card--year" data-text="resume7">2019 – present</p>
+                        <h2 class="header-3">Php</h2>
+                        <p class="resume__card--place" data-text="resume8">self-taught</p>
+                        <!-- <p class="resume__card--text" data-text="resume9">
+                            در حدود یک سال و نیم و دوره های مختلف و همکاری با یک سینور در چند پروژه.
+                        </p> -->
+                    </div>
+                    <div class="resume__card ">
+                        <p class="resume__card--year" data-text="resume7">2019 – present</p>
+                        <h2 class="header-3">Laravel</h2>
+                        <p class="resume__card--place" data-text="resume8">self-taught</p>
+                        <!-- <p class="resume__card--text" data-text="resume9">
+                            در حدود یک سال و نیم و دوره های مختلف و همکاری با یک سینور در چند پروژه.
+                        </p> -->
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0" data-aos="fade-left">
+                    <div class="row">
+                        <h2 class="header-3" data-text="resume10">My Experience</h2>
+                    </div>
+                    <div class="resume__card exper">
+                        <p class="resume__card--year" data-text="resume11">August 2020, November 2022</p>
+                        <h2 class="header-3" data-text="resume12">Laravel developer at Aysaco</h2>
+                        <p class="resume__card--place" data-text="resume13"></p>
+                        <!-- <p class="resume__card--text" data-text="resume14">
+                            دوره css پیشرفته واستفاده از node-sass وطراحی ریسپانیسو با flex-box و grid
+                        </p> -->
+                    </div>
+                    <div class="resume__card exper">
+                        <p class="resume__card--year" data-text="resume15">October 2020, December 2020</p>
+                        <h2 class="header-3" data-text="resume16">Frontend html and css Internship supervised by mahdi abedi</h2>
+                        <p class="resume__card--place" data-text="resume17"></p>
+                        <p class="resume__card--text" data-text="resume18">
+                        </p>
+                    </div>
+                    <div class="resume__card exper">
+                        <p class="resume__card--year" data-text="resume15">December 2020, march 2021</p>
+                        <h2 class="header-3" data-text="resume16">Frontend js internship supervised by mahdi abedi</h2>
+                        <p class="resume__card--place" data-text="resume17"></p>
+                        <p class="resume__card--text" data-text="resume18">
+                        </p>
+                    </div>
+                    <div class="resume__card exper">
+                        <p class="resume__card--year" data-text="resume15">December 2020, may 2021</p>
+                        <h2 class="header-3" data-text="resume16">Freelance Laravel developer</h2>
+                        <p class="resume__card--place" data-text="resume17"></p>
+                        <p class="resume__card--text" data-text="resume18">
+                        </p>
+                    </div>
+                    <div class="resume__card exper">
+                        <p class="resume__card--year" data-text="resume15">May 2021, present</p>
+                        <h2 class="header-3" data-text="resume16">Laravel developer at Nexinolab</h2>
+                        <p class="resume__card--place" data-text="resume17"></p>
+                        <p class="resume__card--text" data-text="resume18">
+                        </p>
+                    </div>
+                    <div class="resume__card exper">
+                        <p class="resume__card--year" data-text="resume15">September 2018, march 2019</p>
+                        <h2 class="header-3" data-text="resume16">Freelance java developer </h2>
+                        <p class="resume__card--place" data-text="resume17"></p>
+                        <p class="resume__card--text" data-text="resume18">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <h2 class="header-3" data-text="resume19">My Skills</h2>
+            </div>
+            <div class="row mt-1 g-5">
+                <div class="col-md-6">
+                    <p class="text-light fw-500 text-end mb-2">95%<span class="float-start">HTML/CSS</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                      <p class="text-light fw-500 text-end mb-2"> 70%<span class="float-start">Java Script, (Es6 , Es7 , Es8)</span>
+                      </p>
+                    <div class="progress progress-sm bg-black mb-5">
+                          <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">95%<span class="float-start">Bootstrap</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">70%<span class="float-start">JQuery</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">40%<span class="float-start">C++</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">40%<span class="float-start">Agile scrum</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-light fw-500 text-end mb-2">80%<span class="float-start">PHP</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">80%<span class="float-start">Laravel</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">80%<span class="float-start">SQL</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">80%<span class="float-start">Git</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">40%<span class="float-start">Nginx</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">40%<span class="float-start">Java</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="portfolio" id="Portfolio">
+        <div class="container mt-4">
+            <div class="row">
+                <h2 class="header-2" data-aos="fade-up">Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">1. Eatook</h3>
+                    <p class="resume__card--place">Laravel , HTML , CSS , Bootstrap , JQuery</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <img src="img/forkify.png" alt="" class="portfolio__img"> -->
+                            <img alt="video gif animation" class="portfolio__img" src="img/eatook.gif">
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text" data-text="portfolio3">
+                                Backend developer of Eatook project, a site that sold discount packages,
+                                including a 20-page store site, admin dashboard, 
+                                and a scan QR code and management application for iOS users.
+                            </p>
+                            <a href="https://eatook.ca" class="portfolio__link">Check Website &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">2. Footofanha</h3>
+                    <p class="resume__card--place">Laravel , HTML , CSS , Bootstrap , JQuery</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <img src="img/forkify.png" alt="" class="portfolio__img"> -->
+                            <img alt="video gif animation" class="portfolio__img" src="img/footofan.gif">
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text" data-text="portfolio4">
+                                Web developer of Footofanha project, footofanha includes user,admin and teacher dashboards,
+                                a 30 plus page learning online market place majoring in hand craft, work with wood and …  
+                            </p>
+                            <a href="https://footofanha.com" class="portfolio__link">Check Website &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">3. NexinoLab</h3>
+                    <p class="resume__card--place">Web developer</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <img src="img/forkify.png" alt="" class="portfolio__img"> -->
+                            <img alt="video gif animation" class="portfolio__img" src="img/nexiolab.gif">
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text" data-text="portfolio5">
+                                Web developer
+                                Nexinolab project is an online learning and mentoring marketplace majoring in entrepreneurship,
+                                that includes admin, user and mentor dashboards, holding events using bbb and adobe connect, handing financials between mentors with company, handling mentorship sessions, and …
+                            </p>
+                            <a href="https://nexinolab.com" class="portfolio__link">Check Website &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">4. kitchen priview</h3>
+                    <p class="resume__card--place">Laravel , HTML , CSS , Bootstrap</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <video autoplay loop muted inline class="portfolio__img">
+                                <source src="img/kitchen.gif" type="video/gif">
+                              </video> -->
+                              <img alt="video gif animation" class="portfolio__img" src="img/kitchen.gif">
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text" data-text="portfolio2">
+                                Carinocarlo is a home product webshop.
+                            </p>
+                            <a href="https://carinocarlo.org/" class="portfolio__link">Check Website &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="Contact">
+        <div class="container mt-4">
+            <div class="row">
+                <h2 class="header-2" data-aos="fade-up">Get In Thouch</h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-4" data-aos="fade-right">
+                    <h3 class="header-3">Address</h3>
+                    <div class="contact__address">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/icon.svg#icon-office"></use>
+                        </svg>
+                        <p class="contact--address">Esfhan</p>
+                    </div>
+                    <div class="contact__address">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/icon.svg#icon-phone"></use>
+                        </svg>
+                        <p class="contact--address">(+98) 9910451706</p>
+                    </div>
+                    <div class="contact__address mb-5">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/icon.svg#icon-mail3"></use>
+                        </svg>
+                        <p class="contact--address">alirezaportous@gmail.com</p>
+                    </div>
+                    <h3 class="header-3 mt-5">Follow Me</h3>
+                    <div class="contact__icons">
+                        <a href="https://ir.linkedin.com/in/alireza-porthos-a75248194" class="contact__link">
+                            <svg class="contact__icon--gray">
+                                <use xlink:href="img/icon.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/alirezaporthos" class="contact__link">
+                            <svg class="contact__icon--gray">
+                                <use xlink:href="img/icon.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/+989910451706" class="contact__link">
+                            <svg class="contact__icon--gray">
+                                <use xlink:href="img/icon1.svg#icon-whatsapp"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8" data-aos="fade-left">
+                    <h3 class="header-3">Send Me A Note</h3>
+                    <form class="contact__form" action="#">
+                        <div class="row">
+                            <div class="col-6">
+                                <input class="contact__input" type="text" id="nameInput" placeholder="Name">
+                            </div>
+                            <div class="col-6">
+                                <input class="contact__input" type="text" id="emailInput" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-md-12">
+                                <textarea class="contact__textarea" cols="30" rows="5" id="bodyInput">Tell Me More About To Need...</textarea>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <button class="contact__btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</html>
