@@ -39,4 +39,3 @@ new Typed('.second-text',{
 
 
     
-];
